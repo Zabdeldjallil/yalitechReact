@@ -26,7 +26,6 @@ const handleFetch=async()=>{
   }
 let ordersToShow
   useEffect(()=>{
-    handleFetchss()
  handleFetch() 
   },[status,perPage,page])
 if(searched!==""){
