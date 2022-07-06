@@ -11,17 +11,7 @@ function App() {
   const [filterType,setFilterType]=useState("")
   const token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjkzNjMwMDlmMTI3ODUwZDllYjE2ZWMiLCJuYW1lIjoiaGFtemEgaGFvdWkiLCJyb2xlIjoic2VsbGVyIiwicGVybWlzc2lvbnMiOltdLCJleHAiOjE2NTkzNDY1MzkuMjQxLCJpYXQiOjE2NTQxNjI1Mzl9.b9TkN02qafmGtYmwEcpfxJrQJVvBRZuPRKe-FQCchL8"
 
-const handleFetchss=async()=>{
-  const result= await fetch(
-      `https://call-center-yalitech.herokuapp.com/orders/stats`,
-      {
-      headers: {
-            'Authorization': `Bearer ${token}`, 
-        }
-    })
-  const parsed=await result.json()
-    console.log(parsed)
-  }
+
 
 const handleFetch=async()=>{
   const result= await fetch(
